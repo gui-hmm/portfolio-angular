@@ -1,0 +1,52 @@
+<p class="text-base font-bold text-blue900 mb-4">Sobre mim</p>
+
+<div class="flex flex-col gap-[10px] bg-gradient-to-r from-sky-600 to-emerald-500 p-[20px] rounded text-blue100">
+    <h2 class="tracking-widest font-bold">Desenvolvedor Front-end</h2>
+    <p class="leading-6 text-sm text-blue100p80">Sou estudante de Sistemas para Internet na UNICAP, com paixão pelo desenvolvimento Front-End. Possuo experiência em projetos que utilizam tecnologias como HTML, CSS, JavaScript, TypeScript e frameworks modernos. Busco uma oportunidade para aplicar meu conhecimento em programação e otimização de soluções digitais, contribuindo para projetos inovadores.</p>
+    <app-navigation-line></app-navigation-line>
+</div>
+
+<p class="text-base font-bold text-blue900 my-4">Repositórios</p>
+
+<div class="animate-slide-left grid lg:grid-cols-2 grid-cols-1 gap-4 pb-5">
+  @for (project of projects; track $index) {
+    @if (project.id <= 6) {
+      <a [href]="project.href" target="_blank" class="flex flex-col p-4 gap-4 border border-blue-900 rounded-md hover:bg-blue-900/10 duration-300 ease-in">
+          <h3 class="font-bold text-lg">{{ project.title }}</h3>
+          <p class="text-sm text-gray-600 line-clamp-2">{{ project.description }}</p>
+          <div class="technologies flex gap-3">
+              @for (technologie of project.technologies; track $index) {
+                  <img [src]="technologie" [alt]="'Technology logo'" class="w-6 h-6" />
+              }
+          </div>
+      </a>
+    }
+  }
+</div>
+<a href="/projects" class="flex justify-center py-4 px-6 border border-blue-900 rounded-md hover:bg-blue-900/10 transition duration-300 ease-in-out">
+  <h3 class="font-bold text-blue-900">Ver todos</h3>
+</a>
+
+
+<p class="text-base font-bold text-blue900 my-4">tecnologias</p>
+
+<div class="animate-slide-left pb-5">
+  <a class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 pb-5">
+      @for (skill of skills; track $index) {
+          @if (skill.id <= 6) {
+              <a href="/skills" class="flex py-4 px-6 gap-4 border border-blue-900 rounded-md hover:bg-blue-900/10 transition duration-300 ease-in-out">
+                <span class="my-auto">
+                  <img [src]="skill.src" [alt]="skill.alt" [width]="30" class="rounded-lg object-cover" />
+                </span>
+                <div>
+                  <h3 class="font-bold text-blue-900">{{ skill.name }}</h3>
+                  <span class="text-xs text-blue-900/80">{{ skill.role }}</span>
+                </div>
+              </a>
+          }
+      }
+  </a>
+  <a href="/skills" class="flex justify-center py-4 px-6 border border-blue-900 rounded-md hover:bg-blue-900/10 transition duration-300 ease-in-out">
+      <h3 class="font-bold text-blue-900">Ver todos</h3>
+  </a>
+</div>

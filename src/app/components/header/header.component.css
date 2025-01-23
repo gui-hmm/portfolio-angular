@@ -1,0 +1,5 @@
+.infinite-gradient {
+    background-image: linear-gradient(to right, #7dd3fc, #34d399);
+    background-size: 300% 100%;
+    animation: infinity-gradient 5s infinite linear;
+  }
