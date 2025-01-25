@@ -15,11 +15,12 @@ export const projects = [
       '/skills/render.jpg',
     ],
     path: '/ocr',
-    href: 'https://ocr-sandy.vercel.app/'
+    href: "https://github.com/gui-hmm/ocr",
+    siteHref: 'https://ocr-sandy.vercel.app/'
   },
   {
     id: 2,
-    title: 'Terracota: Sistema Integrado de E-commerce',
+    title: 'Terracota: Sistema de E-commerce',
     image: '/projects/terracota.png',
     description: 'Projeto desenvolvido em equipe, no qual atuo como líder de front-end. A solução é um e-commerce que integra uma aplicação web e mobile. No front-end web, utilizo React com TypeScript para construir interfaces interativas e responsivas, empregando tecnologias como gerenciamento de estado e boas práticas de desenvolvimento. Para a aplicação mobile, utilizei o Flutter, garantindo uma experiência fluida e consistente para os usuários em diferentes dispositivos.',
     technologies: [
@@ -30,7 +31,8 @@ export const projects = [
       '/skills/render.jpg',
     ],
     path: '/terracota',
-    href: 'https://terracota.vercel.app/'
+    href: "https://github.com/gui-hmm/teste-frontend-v4",
+    siteHref: 'https://terracota.vercel.app/'
   },
   {
     id: 3,
@@ -59,7 +61,8 @@ export const projects = [
       '/skills/vercel.svg',
     ],
     path: "/repositories/pague-bem-brasil",
-    href: "https://pague-bem-dashbord.vercel.app/"
+    href: "https://github.com/gui-hmm/pagueBem_dashbord",
+    siteHref: "https://pague-bem-dashbord.vercel.app/"
   },
   {
     id: 5,
@@ -97,7 +100,8 @@ export const projects = [
       '/skills/spring-svgrepo-com.svg',
     ],
     path: '/homem-ferro-spring',
-    href: 'https://react-spring.onrender.com/'
+    href: "https://github.com/gui-hmm/H_W_spring",
+    siteHref: 'https://react-spring.onrender.com/'
   },
   {
     id: 8,
@@ -109,7 +113,8 @@ export const projects = [
       '/skills/react-1-logo-svgrepo-com.svg'
     ],
     path: '/star-wars',
-    href: 'https://cards-star-wars.vercel.app/'
+    href: "https://github.com/gui-hmm/cards_star_wars",
+    siteHref: 'https://cards-star-wars.vercel.app/'
   },
   {
     id: 9,
@@ -123,7 +128,8 @@ export const projects = [
       '/skills/vercel.svg',
     ],
     path: '/teste-temperamento',
-    href: 'https://teste-temperamento.vercel.app/'
+    href: "https://github.com/gui-hmm/teste_temperamento",
+    siteHref: 'https://teste-temperamento.vercel.app/'
   },
   {
     id: 10,
@@ -137,6 +143,6 @@ export const projects = [
       '/skills/TailwindCSS-Dark.svg', 
     ],
     path: '/repositories',
-    href: '/'
+    href: '#'
   }
 ];

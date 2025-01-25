@@ -1,8 +1,11 @@
+import { title } from "process";
+
 export const skills = [
   { 
     id: 1, 
     name: 'HTML', 
     alt: 'HTML Logo', 
+    title: 'HTML Logo', 
     src: '/skills/html-5-svgrepo-com.svg', 
     role: 'Frontend' 
   },
@@ -186,7 +189,7 @@ export const skills = [
     name: 'Firebase', 
     alt: 'Firebase Logo', 
     src: '/skills/firebase-svgrepo-com.svg', 
-    role: 'Backend' 
+    role: 'Database' 
   },
   { 
     id: 28, 

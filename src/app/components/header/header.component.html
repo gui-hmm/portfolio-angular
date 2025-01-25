@@ -7,3 +7,27 @@
     <p class="text-xl">Contatos</p>
     <app-navigation></app-navigation>
 </header>
+
+<header class="xl:invisible md:visible w-full h-12 p-3 flex justify-start z-30 fixed top-0 left-0 bg-blue900">
+    <div>
+        @if (!isMenuOpen) {
+            <img src="/nav/menu-svgrepo-com.svg" alt="Menu" class="w-8 h-8 cursor-pointer mr-5" (click)="toggleMenu()">
+        } @else {
+            <img src="/others/close-white.svg" alt="Menu" class="w-8 h-8 cursor-pointer mr-5 decoration-white" (click)="toggleMenu()">
+        }
+    </div>
+</header>
+
+<div [ngClass]="{'transform -translate-x-full': !isMenuOpen, 'transform translate-x-0': isMenuOpen}" class="xl:hidden fixed top-0 left-0 bg-blue900 w-[400px] h-full z-20 transition-transform duration-300">
+    <div class="mb-5 mt-5 pt-8">
+        <img src="/others/eu.jpg" alt="Avatar" class="rounded-full w-[200px] h-[200px] mx-auto">
+    </div>
+    <div class="px-3">
+        <app-title-card></app-title-card>
+    </div>
+    <div class="py-3">
+        <hr class="shrink-0 bg-blue100p20">
+    </div>
+    <p class="text-xl text-white ps-2">Contatos</p>
+    <app-navigation></app-navigation>
+</div>

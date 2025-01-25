@@ -1,1 +1,29 @@
-<p>project-card works!</p>
+<div (click)="closeModalOutside($event)" class="fixed inset-0 z-40 bg-opacity-50 bg-black flex justify-center items-center p-4">
+    <div (click)="$event.stopPropagation()" class="bg-white rounded-md p-6 max-w-xl w-full">
+        <div class="flex justify-between">
+            <h3 class="font-bold text-2xl">{{ selectedProject.title }}</h3>
+            <button (click)="closeModal()" class="font-black text-red-900 hover:text-red-800">
+                <div class="w-8 h-8 flex justify-center items-center hover:bg-blue100 hover:rounded-full">
+                    <img src="/others/close-svgrepo-com.svg" alt="close icon" class="w-6">
+                </div>
+            </button>
+        </div>
+        <img [src]="selectedProject.image" [alt]="selectedProject.title" class="rounded-md w-full my-4" />
+        <p class="text-sm text-gray-600 mb-4">{{ selectedProject.description }}</p>
+        <div class="technologies flex gap-3 mb-4">
+            @for (technologie of selectedProject.technologies; track $index) {
+                <img [src]="technologie" [alt]="'Technology logo'" class="w-6 h-6" />
+            }
+        </div>
+        <div class="flex justify-between">
+            <a [href]="selectedProject.href" target="_blank" class="bg-blue-900 text-white px-4 py-2 rounded-md hover:bg-blue-800">
+                Ver Repositório
+            </a>
+            @if (selectedProject.siteHref != null) {
+                <a [href]="selectedProject.siteHref" target="_blank" class="bg-blue-900 text-white px-4 py-2 rounded-md hover:bg-blue-800">
+                    Ver Site
+                </a>
+            }
+        </div>
+    </div>
+</div>

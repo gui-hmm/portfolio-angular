@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+
 
 @Component({
   selector: 'app-project-card',
@@ -7,5 +8,22 @@ import { Component } from '@angular/core';
   styleUrl: './project-card.component.css'
 })
 export class ProjectCardComponent {
+  @Input() selectedProject: any = null; // Receber os dados do projeto
+  @Output() close = new EventEmitter<void>(); // Evento para fechar o modal
 
+  // Função para fechar o modal
+  closeModal() {
+    this.close.emit(); // Emite o evento de fechamento para o componente pai
+  }
+
+  showProjectDetails(project: any) {
+    this.selectedProject = project;
+  }
+
+  closeModalOutside(event: MouseEvent): void {
+    const modalContent = (event.target as HTMLElement).closest('.bg-white');
+    if (!modalContent) {
+      this.closeModal();
+    }
+  }
 }

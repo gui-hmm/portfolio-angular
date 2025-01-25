@@ -5,8 +5,16 @@
 
 <p class="text-base font-bold text-blue900 mb-4">Habilidades</p>
 
+<input 
+  type="text" 
+  [(ngModel)]="search" 
+  (input)="onSearch()" 
+  placeholder="Pesquisar habilidade..." 
+  class="mb-4 p-2 bg-blue100 border border-blue900 rounded-lg w-full animate-slide-left"
+/>
+
 <div class="animate-slide-left grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 pb-5">
-    @for (skill of skills; track $index) {
+    @for (skill of filteredSkills; track $index) {
         <div class="flex py-4 px-6 gap-4 border border-blue-900 rounded-md hover:bg-blue-900/10 transition duration-300 ease-in-out">
           <span class="my-auto">
             <img [src]="skill.src" [alt]="skill.alt" [width]="30" class="rounded-lg object-cover" />
