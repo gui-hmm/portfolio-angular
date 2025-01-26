@@ -1,6 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
-
 @Component({
   selector: 'app-project-card',
   imports: [],
@@ -11,9 +10,8 @@ export class ProjectCardComponent {
   @Input() selectedProject: any = null; // Receber os dados do projeto
   @Output() close = new EventEmitter<void>(); // Evento para fechar o modal
 
-  // Função para fechar o modal
   closeModal() {
-    this.close.emit(); // Emite o evento de fechamento para o componente pai
+    this.close.emit();
   }
 
   showProjectDetails(project: any) {

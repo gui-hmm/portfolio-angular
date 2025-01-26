@@ -2,10 +2,8 @@
     <div (click)="$event.stopPropagation()" class="bg-white rounded-md p-6 max-w-xl w-full">
         <div class="flex justify-between">
             <h3 class="font-bold text-2xl">{{ selectedProject.title }}</h3>
-            <button (click)="closeModal()" class="font-black text-red-900 hover:text-red-800">
-                <div class="w-8 h-8 flex justify-center items-center hover:bg-blue100 hover:rounded-full">
-                    <img src="/others/close-svgrepo-com.svg" alt="close icon" class="w-6">
-                </div>
+            <button (click)="closeModal()" class="w-8 h-8 flex justify-center items-center hover:bg-blue100 hover:rounded-full">
+                <img src="/others/close-svgrepo-com.svg" alt="close icon" class="w-6">
             </button>
         </div>
         <img [src]="selectedProject.image" [alt]="selectedProject.title" class="rounded-md w-full my-4" />
@@ -16,11 +14,11 @@
             }
         </div>
         <div class="flex justify-between">
-            <a [href]="selectedProject.href" target="_blank" class="bg-blue-900 text-white px-4 py-2 rounded-md hover:bg-blue-800">
+            <a [href]="selectedProject.href" target="_blank" alt="GitHub" class="bg-blue-900 text-white px-4 py-2 rounded-md hover:bg-blue-700">
                 Ver Repositório
             </a>
             @if (selectedProject.siteHref != null) {
-                <a [href]="selectedProject.siteHref" target="_blank" class="bg-blue-900 text-white px-4 py-2 rounded-md hover:bg-blue-800">
+                <a [href]="selectedProject.siteHref" target="_blank" alt="Website" class="bg-blue-900 text-white px-4 py-2 rounded-md hover:bg-blue-700">
                     Ver Site
                 </a>
             }
