@@ -1,68 +1,66 @@
-import { title } from "process";
-
 export const skills = [
   { 
     id: 1, 
     name: 'HTML', 
     alt: 'HTML Logo', 
     title: 'HTML Logo', 
-    src: '/skills/html-5-svgrepo-com.svg', 
+    src: '/skills/html.svg', 
     role: 'Frontend' 
   },
   { 
     id: 2, 
     name: 'CSS', 
     alt: 'CSS Logo', 
-    src: '/skills/css-3-svgrepo-com.svg', 
+    src: '/skills/css.svg', 
     role: 'Frontend' 
   },
   { 
     id: 3, 
     name: 'JavaScript', 
     alt: 'JavaScript Logo', 
-    src: '/skills/javascript-svgrepo-com.svg', 
+    src: '/skills/javascript.svg', 
     role: 'Frontend' 
   },
   { 
     id: 4, 
     name: 'TypeScript', 
     alt: 'TypeScript Logo', 
-    src: '/skills/typescript-svgrepo-com.svg', 
+    src: '/skills/typescript.svg', 
     role: 'Frontend' 
   },
   { 
     id: 5, 
     name: 'Python', 
     alt: 'Python Logo', 
-    src: '/skills/python-svgrepo-com.svg', 
+    src: '/skills/python.svg', 
     role: 'Backend' 
   },
   { 
     id: 6, 
     name: 'Java', 
     alt: 'Java Logo', 
-    src: '/skills/java-svgrepo-com.svg', 
+    src: '/skills/java.svg', 
     role: 'Backend' 
   },
   { 
     id: 7, 
     name: 'React', 
     alt: 'React Logo', 
-    src: '/skills/react-1-logo-svgrepo-com.svg', 
+    src: '/skills/react.svg', 
     role: 'Frontend' 
   },
   { 
     id: 8, 
     name: 'Styled Components', 
     alt: 'Styled Components Logo', 
-    src: '/skills/styled-components-svgrepo-com.svg', 
+    src: '/skills/styled-components.svg', 
     role: 'Frontend' 
   },
   { 
     id: 9, 
     name: 'TailwindCSS', 
     alt: 'TailwindCSS Logo', 
-    src: '/skills/TailwindCSS-Dark.svg', 
+    src: '/skills/tailwind-css.svg', 
     role: 'Frontend' 
   },
   { 
@@ -76,49 +74,49 @@ export const skills = [
     id: 11, 
     name: 'Angular', 
     alt: 'Angular Logo', 
-    src: '/skills/angular-icon-svgrepo-com.svg', 
+    src: '/skills/angular.svg', 
     role: 'Frontend' 
   },
   { 
     id: 12, 
     name: 'Node.js', 
     alt: 'Node.js Logo', 
-    src: '/skills/node-svgrepo-com.svg', 
+    src: '/skills/node.svg', 
     role: 'Backend' 
   },
   { 
     id: 13, 
     name: 'NestJS', 
     alt: 'NestJS Logo', 
-    src: '/skills/nestjs-svgrepo-com.svg', 
+    src: '/skills/nestjs.svg', 
     role: 'Backend' 
   },
   { 
     id: 14, 
     name: 'Spring', 
     alt: 'Spring Logo', 
-    src: '/skills/spring-svgrepo-com.svg', 
+    src: '/skills/spring.svg', 
     role: 'Backend' 
   },
   { 
     id: 15, 
     name: 'MySQL', 
     alt: 'MySQL Logo', 
-    src: '/skills/mysql-svgrepo-com.svg', 
+    src: '/skills/mysql.svg', 
     role: 'Database' 
   },
   { 
     id: 16, 
     name: 'PostgreSQL', 
     alt: 'PostgreSQL Logo', 
-    src: '/skills/postgresql-svgrepo-com.svg', 
+    src: '/skills/postgresql.svg', 
     role: 'Database' 
   },
   { 
     id: 17, 
     name: 'Git', 
     alt: 'Git Logo', 
-    src: '/skills/git-svgrepo-com.svg', 
+    src: '/skills/git.svg', 
     role: 'DevOps' 
   },
   { 
@@ -139,28 +137,28 @@ export const skills = [
     id: 20, 
     name: 'Jacoco', 
     alt: 'Jacoco Logo', 
-    src: '/skills/jacoco-logo.webp', 
+    src: '/skills/jacoco.webp', 
     role: 'Testing' 
   },
   { 
     id: 21, 
     name: 'JUnit5', 
     alt: 'JUnit5 Logo', 
-    src: '/skills/junit5-svgrepo-com.svg', 
+    src: '/skills/junit5.svg', 
     role: 'Testing' 
   },
   { 
     id: 22, 
     name: 'Mockito', 
     alt: 'Mockito Logo', 
-    src: '/skills/Mockito_Logo.png', 
+    src: '/skills/mockito.png', 
     role: 'Testing' 
   },
   { 
     id: 23, 
     name: 'Selenium', 
     alt: 'Selenium Logo', 
-    src: '/skills/selenium-svgrepo-com.svg', 
+    src: '/skills/selenium.svg', 
     role: 'Testing' 
   },
   { 
@@ -174,28 +172,35 @@ export const skills = [
     id: 25, 
     name: 'Scrum', 
     alt: 'Scrum Logo', 
-    src: '/skills/scrum-svgrepo-com.svg', 
+    src: '/skills/scrum.svg', 
     role: 'Methodology' 
   },
   { 
     id: 26, 
     name: 'Flutter', 
     alt: 'Flutter Logo', 
-    src: '/skills/flutter-svgrepo-com.svg', 
+    src: '/skills/flutter.svg', 
     role: 'Mobile' 
   },
   { 
     id: 27, 
-    name: 'Firebase', 
-    alt: 'Firebase Logo', 
-    src: '/skills/firebase-svgrepo-com.svg', 
+    name: 'Back4app', 
+    alt: 'Back4app Logo', 
+    src: '/skills/b4a.jpeg', 
     role: 'Database' 
   },
   { 
     id: 28, 
+    name: 'Firebase', 
+    alt: 'Firebase Logo', 
+    src: '/skills/firebase.svg', 
+    role: 'Database' 
+  },
+  { 
+    id: 29, 
     name: 'Azure Blob Storage', 
     alt: 'Azure Blob Storage Logo', 
-    src: '/skills/azure-blob-storage-svgrepo-com.svg', 
+    src: '/skills/azure-blob-storage.svg', 
     role: 'Backend' 
   }
 ];
