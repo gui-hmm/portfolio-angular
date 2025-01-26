@@ -163,6 +163,7 @@ export const projects = [
       '/skills/tailwind-css.svg', 
     ],
     path: '/repositories',
-    href: '#'
+    href: 'https://github.com/gui-hmm/portfolio-angular',
+    siteHref: '#'
   }
 ];
