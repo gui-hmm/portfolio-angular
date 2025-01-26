@@ -1,59 +1,141 @@
-# AngularPortfolio
+# **Portfólio Pessoal** 🌟
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.0.
+Este é meu portfólio pessoal desenvolvido com **Angular** e **Tailwind CSS**. Ele foi criado para apresentar minhas habilidades, projetos realizados e tecnologias que domino. Além de ser funcional e responsivo, este projeto foi uma oportunidade de explorar e consolidar conhecimentos em **Angular**, modularização e boas práticas no desenvolvimento front-end.
 
-## Development server
+---
 
-To start a local development server, run:
+## **Demonstração** 🚀
 
-```bash
-ng serve
-```
+🌐 **[Acesse o Portfólio Aqui](https://portfolio-angular-rose.vercel.app/)**
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## **Funcionalidades** 🛠️
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- **Página Inicial (Home):**  
+  - Breve descrição sobre mim.  
+  - Destaque de alguns projetos e habilidades.
 
-```bash
-ng generate component component-name
-```
+- **Página de Projetos:**  
+  - Listagem completa de projetos.  
+  - Filtro por título, descrição e tecnologias.  
+  - Visualização detalhada de cada projeto em um modal com:
+    - Título, imagem, descrição, tecnologias utilizadas e links para repositório e deploy.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- **Página de Habilidades:**  
+  - Listagem de habilidades com ícones representativos.  
+  - Filtro por nome ou tipo de tecnologia.
 
-```bash
-ng generate --help
-```
+- **Modularização:**  
+  Componentes reutilizáveis, como:
+  - Header, Footer, Navigation, Navigation-Line, Project-Card e Title-Card.
 
-## Building
+- **Responsividade:**  
+  Totalmente adaptado para telas pequenas (mobile) até grandes monitores.  
+  - Gradiente de fundo aparece em telas maiores.  
+  - Ajustes dinâmicos para melhorar a experiência do usuário.
 
-To build the project run:
+- **Animações e Transições:**  
+  Transições suaves e animações de gradiente nos cards, headers e modais.
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## **Tecnologias Utilizadas** 🛠️
 
-## Running unit tests
+- **Framework:** Angular  
+- **Estilização:** Tailwind CSS  
+- **Gerenciamento de Dados:** Estruturas armazenadas em arquivos ts locais  
+- **Design Responsivo:** Implementado com media queries e classes utilitárias do Tailwind  
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+---
 
-```bash
-ng test
-```
+## **Pré-requisitos** 📋
 
-## Running end-to-end tests
+Antes de começar, você precisa ter instalado em sua máquina:  
 
-For end-to-end (e2e) testing, run:
+- **Node.js** (versão 16 ou superior)  
+- **Angular CLI**  
 
-```bash
-ng e2e
-```
+---
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## **Como Executar o Projeto?** 🖥️
 
-## Additional Resources
+1. **Clone o repositório:**  
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+2. **Entre na pasta do projeto:**
+    ```bash
+    cd portfolio-angular
+
+3. **Instale as dependências:**
+    ```bash
+    npm install
+
+4. **Inicie o servidor de desenvolvimento:**
+    ```bash
+    ng serve
+
+5. **Acesse o projeto no navegador:**
+O projeto estará disponível em http://localhost:4200.
+
+## Estrutura de Pastas 📂
+    
+    src/
+    ├── app/
+    │   ├── components/
+    │   │   ├── footer/
+    │   │   ├── header/
+    │   │   ├── navigation/
+    │   │   ├── project-card/
+    │   │   └── title-card/
+    │   │── data/
+    │   │   ├── projects.ts
+    │   │   └── skills.ts
+    │   ├── pages/
+    │   │   ├── home/
+    │   │   ├── projects/
+    │   │   └── skills/
+    │   ├── app.components.css
+    │   ├── app.components.html
+    │   ├── app.components.spec.ts
+    │   ├── app.components.ts
+    │   ├── app.config.server.ts
+    │   ├── app.config.ts
+    │   ├── app.routes.ts
+    
+---
+
+## Detalhes Técnicos 🔍
+
+- **Modal para Visualização de Projetos:**
+Um modal funcional e acessível, com fechamento via clique externo ou no botão de "fechar".
+
+- **Filtros Dinâmicos:**
+Implementados diretamente no front-end, sem dependência de APIs externas.
+
+- **Gradiente e Estética:**
+Um gradiente elegante aplicado ao fundo e animações no título da página principal.
+
+- **Deploy** 🌍
+O projeto foi publicado utilizando Vercel. Você pode acessá-lo em:
+
+**[Link do Portfólio](https://portfolio-angular-rose.vercel.app/)**
+
+
+## Contribuições 🤝
+Contribuições são sempre bem-vindas! Caso queira colaborar:
+
+1. Faça um fork do projeto.
+2. Crie uma branch para sua feature (git checkout -b feature/nova-feature).
+3. Faça um commit com suas mudanças (git commit -m 'Adicionei nova feature').
+4. Envie um push para a branch (git push origin feature/nova-feature).
+5. Abra um Pull Request.
+
+## Contato 📬
+👤 Guilherme Henrique de Melo Moura
+📧 Email: henriquemelomoura@gmail.com
+🌐 LinkedIn: [meu linkedin](https://www.linkedin.com/in/guilherme-henrique-mm/)
+📂 GitHub: [meu github](https://github.com/gui-hmm)
+
