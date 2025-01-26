@@ -118,11 +118,11 @@ Implementados diretamente no front-end, sem dependência de APIs externas.
 - **Gradiente e Estética:**
 Um gradiente elegante aplicado ao fundo e animações no título da página principal.
 
-- **Deploy** 🌍
+**Deploy** 🌍
 O projeto foi publicado utilizando Vercel. Você pode acessá-lo em:
-
 **[Link do Portfólio](https://portfolio-angular-rose.vercel.app/)**
 
+---
 
 ## Contribuições 🤝
 Contribuições são sempre bem-vindas! Caso queira colaborar:
@@ -133,9 +133,11 @@ Contribuições são sempre bem-vindas! Caso queira colaborar:
 4. Envie um push para a branch (git push origin feature/nova-feature).
 5. Abra um Pull Request.
 
+---
+
 ## Contato 📬
-👤 Guilherme Henrique de Melo Moura
-📧 Email: henriquemelomoura@gmail.com
-🌐 LinkedIn: [meu linkedin](https://www.linkedin.com/in/guilherme-henrique-mm/)
-📂 GitHub: [meu github](https://github.com/gui-hmm)
+- 👤 Guilherme Henrique de Melo Moura
+- 📧 Email: henriquemelomoura@gmail.com
+- 🌐 LinkedIn: [meu linkedin](https://www.linkedin.com/in/guilherme-henrique-mm/)
+- 📂 GitHub: [meu github](https://github.com/gui-hmm)
 
