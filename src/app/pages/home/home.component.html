@@ -16,7 +16,7 @@
         <p class="text-sm text-gray-600 line-clamp-2">{{ project.description }}</p>
         <div class="technologies flex gap-3">
           @for (technologie of project.technologies; track $index) {
-            <img [src]="technologie" [alt]="'Technology logo'" title=project. class="w-6 h-6" />
+            <img [src]="technologie" [alt]="'Technology logo'" title=project. class="sm:w-6 w-4" />
           }
         </div>
       </a>

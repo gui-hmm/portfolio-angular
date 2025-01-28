@@ -13,16 +13,16 @@
         @if (!isMenuOpen) {
             <img src="/nav/menu-svgrepo-com.svg" alt="Menu" class="w-8 h-8 cursor-pointer mr-5 pb-1" (click)="toggleMenu()">
         } @else {
-            <img src="/others/close-white.svg" alt="Menu" class="w-8 h-8 cursor-pointer mr-5 decoration-white" (click)="toggleMenu()">
+            <img src="/others/close-white.svg" alt="Menu" class="w-8 h-8 cursor-pointer mr-5" (click)="toggleMenu()">
         }
     </div>
 </header>
 
-<div [ngClass]="{'transform -translate-x-full': !isMenuOpen, 'transform translate-x-0': isMenuOpen}" class="xl:hidden fixed top-0 left-0 bg-blue900 w-[400px] h-full z-20 transition-transform duration-300">
+<div [ngClass]="{'transform -translate-x-full': !isMenuOpen, 'transform translate-x-0': isMenuOpen}" class="xl:hidden fixed top-0 left-0 bg-blue900 w-[340px] h-full z-20 transition-transform duration-300">
     <div class="mb-5 mt-5 pt-8">
         <img src="/others/eu.jpg" alt="Avatar" class="rounded-full w-[200px] h-[200px] mx-auto">
     </div>
-    <div class="px-3">
+    <div class="px-5">
         <app-title-card></app-title-card>
     </div>
     <div class="py-3">
