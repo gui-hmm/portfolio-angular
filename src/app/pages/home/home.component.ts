@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { NavigationLineComponent } from "../../components/navigation-line/navigation-line.component";
 import { skills } from '../../data/skills';
 import { projects } from '../../data/projects';
 import { ProjectCardComponent } from "../../components/project-card/project-card.component";
 
 @Component({
   selector: 'app-home',
-  imports: [NavigationLineComponent, ProjectCardComponent],
+  imports: [ProjectCardComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
